@@ -7,3 +7,11 @@ const getPayloadData = (name = `random`) => {};
   //   "projectId": 1,
   //   "suiteId": 1
   // },
+
+
+  const run_id = () => 
+  {
+    fetch('testrail-cache.txt')
+  .then(response => response.text())
+  .then(text => console.log(text))
+  }

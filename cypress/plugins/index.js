@@ -16,7 +16,11 @@
  * @type {Cypress.PluginConfig}
  */
 // eslint-disable-next-line no-unused-vars
-
+// cypress/plugins/index.js
+module.exports = (on, config) => {
+  // https://github.com/bahmutov/cypress-testrail-simple
+  require('cypress-testrail-simple/src/plugin')(on, config)
+}
 // cypress/plugins/index.js
 module.exports = (on, config) => {
   // optional: register cypress-grep plugin code

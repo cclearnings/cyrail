@@ -1,5 +1,5 @@
 let baseURL = "https://gorest.co.in";
-describe('check user, update user using put and patch (updateuser)', {tags: '@updateuserTag'}, () =>
+describe('check user, update user using put and patch updateuser)', {tags: '@updateuserTag'}, () =>
 {
  
  

@@ -1,7 +1,7 @@
 let baseURL = "https://gorest.co.in";
-describe('create user new'  (createuser),{ tags: '@createuserTag'}, () =>
+describe('create user new (createuser)',{ tags: '@createuserTag'}, () =>
 {
-  it("Creating using post method", function () {
+  it("C1 Creating using post method", function () {
     cy.request({
       method: "POST",
       url: baseURL + "/public/v2/users",
@@ -12,9 +12,9 @@ describe('create user new'  (createuser),{ tags: '@createuserTag'}, () =>
       body: {
           "name": "Kiran Ch",
           "gender": "male",
-          "email": "kiran44bg8cc@gmail.com",
+          "email": "thisiswhatsuccuess@gmail.com",
           "status": "active",
-        },
+        }
         // "Content-Type": "application/json;",
         // "Application": "application/json;",
         // "accept": "application/json;"
@@ -24,12 +24,12 @@ describe('create user new'  (createuser),{ tags: '@createuserTag'}, () =>
         cy.log("User Already created")
       }else {
       expect(response.status).to.eq(201);
-      cy.log("Response Body: " + response.body);
-      cy.log(response.body.name);
-      const userCreated = aryValues.some(
-        item => item.name === response.body.name
-      );
-      cy.log("User Created with ID: " + userCreated);
+      // cy.log("Response Body: " + response.body);
+      // cy.log(response.body.name);
+      // const userCreated = aryValues.some(
+      //   item => item.name === response.body.name
+      // );
+      // cy.log("User Created with ID: " + userCreated);
       }
     });
  });
