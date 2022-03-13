@@ -1,0 +1,10 @@
+{
+  "auth token": "Bearer 4625e6dcf98787b86ee36f58675954196f197a7b098001509401c97d6dfc739f",
+
+  "users": {
+    "name": "Chandrasekhar Ch",
+    "gender": "male",
+    "email": "chandrasekharch8888@gmail.com",
+    "status": "active"
+  }
+}
