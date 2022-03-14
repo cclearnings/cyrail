@@ -1,4 +1,5 @@
 let baseURL = "https://gorest.co.in";
+
 describe('create user new (createuser)',{ tags: '@createuserTag'}, () =>
 {
   it("C1 Creating using post method", function () {
@@ -24,8 +25,8 @@ describe('create user new (createuser)',{ tags: '@createuserTag'}, () =>
         cy.log("User Already created")
       }else {
       expect(response.status).to.eq(201);
-      // cy.log("Response Body: " + response.body);
-      // cy.log(response.body.name);
+      cy.log("Response Body: " + response.body);
+      cy.log(response.body.name);
       // const userCreated = aryValues.some(
       //   item => item.name === response.body.name
       // );
@@ -34,3 +35,12 @@ describe('create user new (createuser)',{ tags: '@createuserTag'}, () =>
     });
  });
 });
+
+describe('to create new user (createuser)',{ tags: '@createuserTag'}, () =>
+{
+
+  it("Addition", function () {
+    expect("Hello").to.eq("Hello"); 
+  });
+});
+

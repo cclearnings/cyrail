@@ -1,0 +1,12 @@
+{
+"scripts": 
+{
+    "test": "npx cypress run --spec .//cypress//integration//3-api-examples//*js",
+    "runtests": "npm run test" 
+},
+"author": "chandrasekhar ch",
+"devDependencies": {
+    "cypress": "^9.5.1"
+}
+  
+}

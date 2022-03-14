@@ -16,13 +16,13 @@ describe('check user, update user using put and patch updateuser)', {tags: '@upd
         method: "PUT",
         url: baseURL + `/public/v2/users/${user.id}}`,
         headers: {
-          Authorization:
+          "Authorization":
             "Bearer 4625e6dcf98787b86ee36f58675954196f197a7b098001509401c97d6dfc739f",
           body: {
-            name: "Thushaar Kiran Ch",
-            gender: "male",
-            email: "thushaarkiranch@gmail.com",
-            status: "active",
+            "name": "Thushaar Kiran Ch",
+            "gender": "male",
+            "email": "thushaarkiranch@gmail.com",
+            "status": "active",
           },
         },
       }).then((res) => {

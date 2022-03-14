@@ -9,9 +9,9 @@ const getPayloadData = (name = `random`) => {};
   // },
 
 
-  const run_id = () => 
-  {
-    fetch('testrail-cache.txt')
-  .then(response => response.text())
-  .then(text => console.log(text))
-  }
+  // const run_id = () => 
+  // {
+  //   fetch('testrail-cache.txt')
+  // .then(response => response.text())
+  // .then(text => console.log(text))
+  // }
